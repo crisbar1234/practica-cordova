@@ -9,12 +9,14 @@
   adapter.inicializar().done(function() {
     console.log("Inicializado: Adaptador de datos");
     //tengo que ejecutar el generar el c´odigo html
-    renderHomeView();
+    /* la quito cuando he hecho la clase homeview 
+    renderHomeView(); */
+     $('body').html(new HomeView(adapter).render());
   });
 
 
 
-
+/*Cuando he hecho el homeview, este c´odigo me sobra
 
   function encontrarPorNombre() {
     adapter.encontrarPorNombre($('#btnBuscar').val()).done(function(futbolistas) {
@@ -26,5 +28,5 @@
     $('body').html(Handlebars.templates.home());
     $('#btnBuscar').on('keyup', encontrarPorNombre);
   }
-
+*/
 }());
