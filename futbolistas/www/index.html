@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="assets/topcoat/css/topcoat-mobile-light.css" rel="stylesheet">
+</head>
+<body>
+<!-- el orden de los scripts es muy importante -->
+
+<script src="lib/jquery.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.runtime.min.js"></script>
+
+<script src="js/templates.js"></script>
+
+<!-- aqu´i es donde decido que tipo de almacenamiento elijo -->
+<script src="js/adapters/localstorage-adapter.js"></script>
+<!-- tengo que cargar el m´etodo de almacenamiento antes que el javascript que lo utiliza, y previamente el js. -->
+<script src="js/app.js"></script>
+
+</body>
+</html>

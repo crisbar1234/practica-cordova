@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+<header>
+<p><button id="btnAyuda">Ayuda</button></p>
+<h1>Futbolistas</h1>
+</header>
+<input id='btnBuscar' type="search" placeholder="Introduce futbolista"/>
+<ul id='lstFutbolistas'></ul>
+
+<script src="lib/jquery.js"></script>
+<!-- aqu´i es donde decido que tipo de almacenamiento elijo -->
+<script src="js/adapters/localstorage-adapter.js"></script>
+<!-- tengo que cargar el m´etodo de almacenamiento antes que el javascript que lo utiliza, y previamente el js. -->
+<script src="js/app.js"></script>
+<script src="cordova.js"></script>
+
+</body>
+</html>
